@@ -1,4 +1,4 @@
-#Article Crawler for German News Site "Wirtschaftswoche"
+# Article Crawler for German News Site "Wirtschaftswoche"
 
 This a little project of mine to learn the usage of the [Scrapy library](https://doc.scrapy.org/en/latest/).
 It downloads all articles from [wiwo.de](https://www.wiwo.de/) and saves them in a general output file.
@@ -14,6 +14,7 @@ scrapy crawl wiwo_all -o "*.json/*.csv"
 ### Prerequisites
 
 Install Anaconda - [Installation guide](https://conda.io/docs/user-guide/install/index.html)
+
 Install scrapy: 
 ```
 pip install scrapy
@@ -62,7 +63,9 @@ This way just articles with a certain author will be written to the output file.
 
 #### Usage of extracted data
 
-The extracted output file can e.g. be used to learn a language model and use it for transfer learning. [More information](http://nlp.fast.ai/).
+The data extracted with the script is zipped in the ["output-all.zip"](output-all.zip).
+
+The extracted output file can e.g. be used to learn a language model and use it for transfer learning ([More information](http://nlp.fast.ai/)).
 A model I created can be found in the "model" folder together with the voccabulary in a zip file.
 Also analysis on the raw articles could be performed, like David Kriesel did in [this CCC Talk](https://www.youtube.com/watch?v=-YpwsdRKt8Q&t=1s).
 
